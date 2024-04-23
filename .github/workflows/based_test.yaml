@@ -1,0 +1,19 @@
+name: Based Test With Runner
+
+run-name: Based Test With Runner
+
+on:
+    - push
+
+jobs:
+    Testing:
+        runs-on: self-hosted
+        steps:
+            - name: Running A Step
+              run: echo "I will be great at my job"
+            - name: Get code
+              uses: actions/checkout@v4
+            - name: List files
+              run: |
+                ls ${{github.workspace}}
+
