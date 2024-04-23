@@ -12,8 +12,8 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_instance" "web" {
-  ami           = "al2023-ami-2023"
+resource "aws_instance" "based_server" {
+  ami           = "ami-830c94e3"
   instance_type = "t3.micro"
 
   tags = {
