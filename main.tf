@@ -26,6 +26,6 @@ resource "aws_instance" "based_server_2" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "BasedServer"
+    Name = "BasedServe"
   }
 }
