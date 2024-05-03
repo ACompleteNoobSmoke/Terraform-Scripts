@@ -15,6 +15,8 @@ provider "aws" {
 resource "aws_instance" "based_server" {
   ami           = "ami-0b0ea68c435eb488d"
   instance_type = "t3.micro"
+  
+
 
   tags = {
     Name = "Based_Server_1"
