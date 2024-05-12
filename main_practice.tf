@@ -8,3 +8,8 @@ resource "random_pet" "my-pet" {
     separator = var.separator
     length = var.length
 }
+
+resource "local_file" "my-practice" {
+    filename = var.filename
+    content = var.file-content["Statement1"]
+}
