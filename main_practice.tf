@@ -13,6 +13,6 @@ resource "local_file" "my-practice" {
     filename = var.filename
     content = var.file-content["Statement1"]
     lifecycle {
-      create_before_destroy = false
+      create_before_destroy = true
     }
 }
