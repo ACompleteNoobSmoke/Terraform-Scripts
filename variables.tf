@@ -18,13 +18,13 @@ variable "length" {
     default = "1"
 }
 
-variable "person" {
-    type = object({
-      name = string
-      age = number
-      occupation = string
-    })
-}
+# variable "person" {
+#     type = object({
+#       name = string
+#       age = number
+#       occupation = string
+#     })
+# }
 
 variable "file-content" {
     type = map
