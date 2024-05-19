@@ -16,3 +16,7 @@ resource "local_file" "my-practice" {
       create_before_destroy = true
     }
 }
+
+module "app_server_modules" {
+  source = "./modules/app_example"
+}
